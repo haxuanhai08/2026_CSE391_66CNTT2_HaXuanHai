@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+    <style>
+        table { width: 100%; }
+        td { padding: 5px; }
+        fieldset { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+<form>
+
+<fieldset>
+    <legend><b>Basic Info</b></legend>
+    <table>
+        <tr>
+            <td>Employee ID</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>Dodsworth</td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" value="Anne"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender"> Male <br>
+                <input type="radio" name="gender"> Female <br>
+                <input type="radio" name="gender"> XXX <br>
+                <input type="radio" name="gender" checked> ZZZ
+            </td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td><input type="text" value="Sales Representative"></td>
+        </tr>
+        <tr>
+            <td>Suffix</td>
+            <td><input type="text" value="Ms."></td>
+        </tr>
+        <tr>
+            <td>Birth Date</td>
+            <td><input type="datetime-local" value="1969-07-02T00:00:00"></td>
+        </tr>
+        <tr>
+            <td>Hire Date</td>
+            <td><input type="datetime-local" value="1994-11-15T00:00:00"></td>
+        </tr>
+        <tr>
+            <td>SSN</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Reports To</td>
+            <td>
+                <select>
+                    <option>Buchanan</option>
+                    <option>Fuller</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+
+
+<fieldset>
+    <legend><b>Contact Info</b></legend>
+    <table>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" placeholder="name@example.com"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" value="7 Houndstooth Rd."></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" value="LonDon"></td>
+        </tr>
+        <tr>
+            <td>Region</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Postal Code</td>
+            <td><input type="text" value="WG2 7LT"></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>
+                <select>
+                    <option>Vietnam</option>
+                    <option>Russian Federation</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>US Home Phone</td>
+            <td><input type="tel" value="(234)234-2342"></td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><input type="file" value="EmpID9.bmp"></td>
+        </tr>
+    </table>
+</fieldset>
+
+
+<fieldset>
+    <legend><b>Optional Info</b></legend>
+    <p>Notes</p>
+    <textarea rows="6" cols="60">Anne has a BA degree in English from St. Lawrence College.
+        She is fluent in French and German.ZZZ</textarea>
+    <br>
+    <tr>
+        <td rowspan="2">Preferred Shirt</td>
+        <td> 
+            <input type="checkbox">Regular
+            <input type="checkbox">Gravy Yard
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td>Active?</td>
+        <input type="checkbox">
+    </tr>
+    <p>
+        Are you human? <input type="text">
+    </p>
+</fieldset>
+
+<button type="submit">Submit</button>
+<button type="reset">Cancel</button>
+
+</form>
+
+</body>
+</html>
