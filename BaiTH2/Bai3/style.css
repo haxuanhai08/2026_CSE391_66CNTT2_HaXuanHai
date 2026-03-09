@@ -9,7 +9,6 @@ body {
     background: #f5f5f5;
 }
 
-/* WRAPPER */
 .wrapper {
     width: 85%;
     margin: 80px auto;
@@ -18,7 +17,6 @@ body {
     background: #f8f8f8;
 }
 
-/* TITLE */
 .main-title {
     text-align: center;
     font-size: 32px;
