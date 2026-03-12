@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập DOM</title>
+    <style>
+        .highlight { background-color: yellow; border: 2px solid red; }
+        .hidden { display: none; }
+        .active { color: blue; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <img id="myImg" src="https://via.placeholder.com/150" alt="Old Image" width="150">
+    <p id="myText">Nội dung để kiểm tra Class</p>
+    
+    <button onclick="runExercise()">Chạy Bài Tập</button>
+
+    <script>
+        function runExercise() {
+            // 1. Lấy phần tử
+            const imgElement = document.getElementById('myImg');
+            const textElement = document.getElementById('myText');
+
+            // --- YÊU CẦU 1: Thay đổi thuộc tính src của thẻ <img> ---
+            // --- YÊU CẦU 2: Sử dụng dot notation để gán giá trị ---
+            imgElement.src = "https://via.placeholder.com/150/0000FF/FFFFFF?text=New+Image";
+            imgElement.alt = "Ảnh mới đã đổi"; // Gán thêm property alt cho vui
+
+            // --- YÊU CẦU 3: Thêm và xóa class bằng classList.add / remove ---
+            textElement.classList.add('highlight'); // Thêm nền vàng
+            // textElement.classList.remove('highlight'); // Nếu muốn xóa thì dùng dòng này
+
+            // --- YÊU CẦU 4: Sử dụng classList.toggle để bật/tắt một trạng thái ---
+            // Ví dụ: Mỗi lần bấm nút sẽ bật/tắt class 'active' (đổi màu chữ)
+            textElement.classList.toggle('active');
+
+            // --- YÊU CẦU 5: Kiểm tra sự tồn tại của class bằng classList.contains ---
+            if (textElement.classList.contains('active')) {
+                console.log("Class 'active' đang TỒN TẠI");
+            } else {
+                console.log("Class 'active' KHÔNG tồn tại");
+            }
+            
+            alert("Đã thực hiện các thay đổi! Hãy kiểm tra màu chữ và ảnh.");
+        }
+    </script>
+</body>
+</html>
