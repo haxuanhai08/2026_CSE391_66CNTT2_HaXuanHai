@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành DOM - JavaScript</title>
+    <style>
+        .highlight { color: blue; font-weight: bold; }
+        .item { margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">Học lập trình JavaScript</h1>
+    
+    <div class="container">
+        <p class="description">Đây là ví dụ về cách chọn phần tử trong DOM.</p>
+        
+        <ul>
+            <li class="item">Phần tử danh sách 1</li>
+            <li class="item">Phần tử danh sách 2</li>
+            <li class="item">Phần tử danh sách 3</li>
+        </ul>
+    </div>
+
+    <script>
+        // 1. Sử dụng getElementById để truy cập trực tiếp qua ID
+        const title = document.getElementById('main-title');
+        console.log("Kết quả getElementById:", title);
+
+        // 2. Sử dụng querySelector để chọn một phần tử bất kỳ (ví dụ: class .description)
+        const desc = document.querySelector('.description');
+        console.log("Kết quả querySelector:", desc);
+
+        // 3. Sử dụng querySelectorAll để lấy danh sách các phần tử (ví dụ: tất cả .item)
+        const items = document.querySelectorAll('.item');
+        console.log("Kết quả querySelectorAll (NodeList):", items);
+
+        // Thêm một chút tương tác để kiểm tra trực quan hơn
+        title.innerText = "Bạn đã chọn được ID thành công.";
+        desc.style.color = "green";
+    </script>
+</body>
+</html>
