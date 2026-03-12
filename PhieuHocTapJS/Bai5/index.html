@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Event JavaScript</title>
+    <style>
+        /* Thêm chút màu sắc để dễ nhìn sự lan truyền sự kiện */
+        #grandparent { padding: 30px; background-color: #f0f0f0; border: 1px solid #ccc; }
+        #parent { padding: 30px; background-color: #ddd; }
+        ul { background: #eef; padding: 20px; cursor: pointer; }
+        li { margin-bottom: 5px; background: #fff; padding: 5px; list-style: none; border: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+    <div id="grandparent">
+        Ông nội (Grandparent)
+        <div id="parent">
+            Cha (Parent)
+            <button id="myButton">1. Click vào tôi!</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <form id="myForm">
+        <label>3. Nhập dữ liệu và nhấn Enter:</label>
+        <input type="text" id="myInput" placeholder="Gõ gì đó...">
+        <button type="submit">Gửi</button>
+    </form>
+
+    <hr>
+
+    <p>5. Danh sách (Event Delegation):</p>
+    <ul id="myList">
+        <li>Mục thứ nhất</li>
+        <li>Mục thứ hai</li>
+        <li>Mục thứ ba</li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
